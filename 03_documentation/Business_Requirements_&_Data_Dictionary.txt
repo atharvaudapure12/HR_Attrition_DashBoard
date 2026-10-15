@@ -1,0 +1,194 @@
+=========================================================================================
+                    PROJECT DOCUMENTATION: HR ATTRITION ANALYTICS DASHBOARD
+=========================================================================================
+
+1. PROJECT OBJECTIVE & PROBLEM STATEMENT
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+The objective of this project is to develop an Executive HR Analytics Dashboard that enables Human Resource teams and business leaders to monitor workforce demographics, employee attrition, compensation trends, and employee satisfaction.
+
+Employee attrition significantly impacts organizational productivity, recruitment costs, employee morale, and business continuity. The organization requires a centralized Business Intelligence solution to identify attrition patterns, understand workforce behavior, evaluate compensation structures, and support data-driven retention strategies.
+
+The dashboard transforms employee records into actionable insights that assist HR professionals in improving workforce planning and reducing employee turnover.
+
+The project answers critical business questions across three analytical areas:
+
+Page 1: Executive Workforce Overview & Employee Demographics
+
+Page 2: Employee Attrition Analysis & Retention Drivers
+
+Page 3: Compensation, Performance & Employee Satisfaction Analysis
+
+
+2. KEY PERFORMANCE INDICATORS (KPIs) & BUSINESS LOGIC
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+To evaluate workforce performance and employee retention, the dashboard implements the following HR KPIs using DAX.
+
+* Total Employees
+
+Formula =
+Count of Employee Records
+
+Business Purpose:
+Measures the total workforce strength.
+
+------------------------------------------------------------
+
+* Attrition Count
+
+Formula =
+Count of Employees where Attrition = "Yes"
+
+Business Purpose:
+Measures the number of employees who left the organization.
+
+------------------------------------------------------------
+
+* Attrition Rate %
+
+Formula =
+(Attrition Count / Total Employees) × 100
+
+Business Purpose:
+Evaluates employee turnover.
+
+------------------------------------------------------------
+
+* Average Monthly Income
+
+Formula =
+Average(Monthly Income)
+
+Business Purpose:
+Measures average employee compensation.
+
+------------------------------------------------------------
+
+* Average Age
+
+Formula =
+Average(Employee Age)
+
+Business Purpose:
+Analyzes workforce age distribution.
+
+------------------------------------------------------------
+
+* Average Salary Hike %
+
+Formula =
+Average(Percent Salary Hike)
+
+Business Purpose:
+Measures annual employee salary increment.
+
+------------------------------------------------------------
+
+* Average Job Satisfaction
+
+Formula =
+Average(Job Satisfaction Score)
+
+Business Purpose:
+Evaluates employee engagement and workplace satisfaction.
+
+------------------------------------------------------------
+
+* Average Years at Company
+
+Formula =
+Average(Years At Company)
+
+Business Purpose:
+Measures average employee tenure and workforce stability.
+
+
+3. DATA DICTIONARY (CRITICAL METRICS EXPLAINED)
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+EmployeeNumber
+Unique identifier assigned to each employee.
+
+Age
+Employee age in years.
+
+Gender
+Employee gender.
+
+Department
+Business department where the employee works.
+
+JobRole
+Employee designation within the organization.
+
+EducationField
+Academic background of the employee.
+
+BusinessTravel
+Frequency of employee business travel.
+
+MonthlyIncome
+Monthly salary earned by the employee.
+
+PercentSalaryHike
+Annual salary increment percentage.
+
+JobSatisfaction
+Employee satisfaction score.
+
+EnvironmentSatisfaction
+Employee satisfaction with workplace environment.
+
+PerformanceRating
+Employee performance evaluation score.
+
+OverTime
+Indicates whether the employee regularly works overtime.
+
+YearsAtCompany
+Total years employed within the organization.
+
+YearsInCurrentRole
+Years spent in the current job role.
+
+YearsSinceLastPromotion
+Time elapsed since last promotion.
+
+TrainingTimesLastYear
+Number of training sessions attended.
+
+MaritalStatus
+Employee marital status.
+
+Attrition
+Indicates whether the employee left the organization.
+
+EmployeeCount
+Total employee count available in the dataset.
+
+
+4. ARCHITECTURE & TARGET AUDIENCE
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Data Model:
+Single HR Fact Table
+
+Fact Table
+
+• HR_Employee_Data
+
+Target Audience
+
+• Chief Human Resources Officer (CHRO)
+
+• HR Business Partners
+
+• Talent Acquisition Teams
+
+• HR Managers
+
+• Workforce Planning Teams
+
+• Business Executives
+
+=========================================================================================
